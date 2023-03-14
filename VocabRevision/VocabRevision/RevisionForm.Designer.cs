@@ -35,6 +35,7 @@
             this.buttonChoiceRemember = new System.Windows.Forms.Button();
             this.buttonNever = new System.Windows.Forms.Button();
             this.timerConfirm = new System.Windows.Forms.Timer(this.components);
+            this.buttonSkip = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelWord
@@ -107,11 +108,24 @@
             this.timerConfirm.Interval = 3000;
             this.timerConfirm.Tick += new System.EventHandler(this.timerConfirm_Tick);
             // 
+            // buttonSkip
+            // 
+            this.buttonSkip.FlatAppearance.BorderSize = 0;
+            this.buttonSkip.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSkip.Location = new System.Drawing.Point(0, 467);
+            this.buttonSkip.Name = "buttonSkip";
+            this.buttonSkip.Size = new System.Drawing.Size(75, 28);
+            this.buttonSkip.TabIndex = 6;
+            this.buttonSkip.Text = "Skip »";
+            this.buttonSkip.UseVisualStyleBackColor = true;
+            this.buttonSkip.Click += new System.EventHandler(this.buttonSkip_Click);
+            // 
             // RevisionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(334, 495);
+            this.Controls.Add(this.buttonSkip);
             this.Controls.Add(this.buttonChoiceRemember);
             this.Controls.Add(this.buttonChoiceForgot);
             this.Controls.Add(this.labelWord);
@@ -134,5 +148,6 @@
         private Button buttonChoiceRemember;
         private Button buttonNever;
         private System.Windows.Forms.Timer timerConfirm;
+        private Button buttonSkip;
     }
 }

@@ -126,5 +126,13 @@ namespace VocabRevision
 
             labelWord.Location = new Point(-6, 53);
         }
+
+        private void buttonSkip_Click(object sender, EventArgs e)
+        {
+            int amount = new Random().Next(4, 16);
+            ShiftWord(amount);
+
+            SelectNewVocabItem();
+        }
     }
 }
