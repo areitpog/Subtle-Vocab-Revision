@@ -78,9 +78,9 @@
             this.buttonChoiceRemember.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonChoiceRemember.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonChoiceRemember.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonChoiceRemember.Location = new System.Drawing.Point(0, 283);
+            this.buttonChoiceRemember.Location = new System.Drawing.Point(0, 256);
             this.buttonChoiceRemember.Name = "buttonChoiceRemember";
-            this.buttonChoiceRemember.Size = new System.Drawing.Size(334, 106);
+            this.buttonChoiceRemember.Size = new System.Drawing.Size(334, 66);
             this.buttonChoiceRemember.TabIndex = 4;
             this.buttonChoiceRemember.Text = "I remember this well";
             this.buttonChoiceRemember.UseVisualStyleBackColor = false;
@@ -110,13 +110,15 @@
             // 
             // buttonSkip
             // 
+            this.buttonSkip.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonSkip.FlatAppearance.BorderSize = 0;
             this.buttonSkip.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSkip.Location = new System.Drawing.Point(0, 467);
+            this.buttonSkip.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonSkip.Location = new System.Drawing.Point(0, 322);
             this.buttonSkip.Name = "buttonSkip";
-            this.buttonSkip.Size = new System.Drawing.Size(75, 28);
+            this.buttonSkip.Size = new System.Drawing.Size(334, 67);
             this.buttonSkip.TabIndex = 6;
-            this.buttonSkip.Text = "Skip »";
+            this.buttonSkip.Text = "Remind me later";
             this.buttonSkip.UseVisualStyleBackColor = true;
             this.buttonSkip.Click += new System.EventHandler(this.buttonSkip_Click);
             // 
@@ -125,8 +127,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(334, 495);
-            this.Controls.Add(this.buttonSkip);
             this.Controls.Add(this.buttonChoiceRemember);
+            this.Controls.Add(this.buttonSkip);
             this.Controls.Add(this.buttonChoiceForgot);
             this.Controls.Add(this.labelWord);
             this.Controls.Add(this.buttonNever);
