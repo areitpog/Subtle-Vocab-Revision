@@ -16,5 +16,5 @@ The first time you open the app, it opens the setup form: <br>
 ![ex 3](https://user-images.githubusercontent.com/77842470/222882550-837f3caa-936e-4707-a936-e8be6dd280d8.png)
 <br><br>
 Click "setup" to add it to startup. Click "remove" to undo that.<br>
-You can open this form at any time by right clicking the icon > Open Setup...
+You can open this form at any time by right clicking the icon > Open Setup...<br>
 ![ex 4](https://user-images.githubusercontent.com/77842470/222882612-0e10d469-3fe9-411d-889d-4e698527bfeb.png)
